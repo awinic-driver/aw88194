@@ -1,0 +1,14 @@
+/* AWINIC AW88194 Smart PA */
+&i2c3 {
+    aw88194_smartpa@34 {
+        compatible = "awinic,aw88194_smartpa";
+        reg = <0x34>;
+        reset-gpio = <&pio 65 0>;
+        irq-gpio = <&pio 5 0>;
+        vbat-monitor-flag = <1>;
+        vbat-monitor-limit-min = <3400>;
+        vbat-monitor-bst-ipeak-limit = <0>;
+        status = "okay";
+    };
+};
+/* AWINIC AW88194 Smart PA End */
